@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D0715421C61705B00C30898 /* Projectile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0715411C61705B00C30898 /* Projectile.swift */; };
+		1DD207F21C617AA000FE90F3 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD207F11C617AA000FE90F3 /* MainMenuScene.swift */; };
+		1DD207F41C617AC400FE90F3 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD207F31C617AC400FE90F3 /* UIButton.swift */; };
+		1DD207F61C617B2100FE90F3 /* SettingsMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD207F51C617B2100FE90F3 /* SettingsMenuScene.swift */; };
+		1DD207F81C617B9B00FE90F3 /* MainMenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1DD207F71C617B9B00FE90F3 /* MainMenuScene.sks */; };
+		1DD207FA1C617BAA00FE90F3 /* SettingsMenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1DD207F91C617BAA00FE90F3 /* SettingsMenuScene.sks */; };
+		1DDDEF471C61612500449865 /* ComboBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDEF461C61612500449865 /* ComboBar.swift */; };
+		2440B62C1D927711007E4B5B /* Led Zeppelin- Stairway to Heaven with Lyrics.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2440B62B1D927711007E4B5B /* Led Zeppelin- Stairway to Heaven with Lyrics.mp3 */; };
+		24B443CA1D9278CE00CFDE98 /* GameModeSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B443C91D9278CE00CFDE98 /* GameModeSelection.swift */; };
+		24C1FFD21D92746B00C99854 /* GameModeSelection.sks in Resources */ = {isa = PBXBuildFile; fileRef = 24C1FFD11D92746B00C99854 /* GameModeSelection.sks */; };
+		3F0E45BE1C623142002725BA /* Opponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0E45BD1C623142002725BA /* Opponent.swift */; };
+		3F0E45C01C62343C002725BA /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0E45BF1C62343C002725BA /* GameOverScene.swift */; };
+		3F0E45C21C6237B9002725BA /* PlayerAnimation.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3F0E45C11C6237B9002725BA /* PlayerAnimation.sks */; };
+		3F3D5FA21C6285BF0015BE38 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D5FA11C6285BF0015BE38 /* Character.swift */; };
+		3F3D5FA41C6286D40015BE38 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D5FA31C6286D40015BE38 /* Player.swift */; };
+		3FC1F5411C60F6080071C643 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1F5401C60F6080071C643 /* AppDelegate.swift */; };
+		3FC1F5431C60F6080071C643 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3FC1F5421C60F6080071C643 /* GameScene.sks */; };
+		3FC1F5451C60F6080071C643 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1F5441C60F6080071C643 /* GameScene.swift */; };
+		3FC1F5471C60F6080071C643 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1F5461C60F6080071C643 /* GameViewController.swift */; };
+		3FC1F54A1C60F6080071C643 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC1F5481C60F6080071C643 /* Main.storyboard */; };
+		3FC1F54C1C60F6080071C643 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC1F54B1C60F6080071C643 /* Assets.xcassets */; };
+		3FC1F54F1C60F6080071C643 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC1F54D1C60F6080071C643 /* LaunchScreen.storyboard */; };
+		3FC1F55A1C60F6080071C643 /* ReaveenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1F5591C60F6080071C643 /* ReaveenTests.swift */; };
+		3FC1F5651C60F6080071C643 /* ReaveenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1F5641C60F6080071C643 /* ReaveenUITests.swift */; };
+		3FC2599F1C61137800623625 /* DashSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC2599E1C61137800623625 /* DashSkill.swift */; };
+		3FC259A11C6113E300623625 /* ProjectileSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC259A01C6113E300623625 /* ProjectileSkill.swift */; };
+		3FFA99651C60FE0B00EBCD87 /* SKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA99641C60FE0B00EBCD87 /* SKButton.swift */; };
+		3FFA99691C60FE3900EBCD87 /* SkillTypes .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA99681C60FE3900EBCD87 /* SkillTypes .swift */; };
+		3FFA996D1C610F0000EBCD87 /* ComboStartSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA996C1C610F0000EBCD87 /* ComboStartSkill.swift */; };
+		3FFA99731C6110E200EBCD87 /* CustomProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA99721C6110E200EBCD87 /* CustomProgressBar.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FC1F5561C60F6080071C643 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FC1F5351C60F6080071C643 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FC1F53C1C60F6080071C643;
+			remoteInfo = Reaveen;
+		};
+		3FC1F5611C60F6080071C643 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FC1F5351C60F6080071C643 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FC1F53C1C60F6080071C643;
+			remoteInfo = Reaveen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D0715411C61705B00C30898 /* Projectile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Projectile.swift; sourceTree = "<group>"; };
+		1DD207F11C617AA000FE90F3 /* MainMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		1DD207F31C617AC400FE90F3 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		1DD207F51C617B2100FE90F3 /* SettingsMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsMenuScene.swift; sourceTree = "<group>"; };
+		1DD207F71C617B9B00FE90F3 /* MainMenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenuScene.sks; sourceTree = "<group>"; };
+		1DD207F91C617BAA00FE90F3 /* SettingsMenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SettingsMenuScene.sks; sourceTree = "<group>"; };
+		1DDDEF461C61612500449865 /* ComboBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComboBar.swift; sourceTree = "<group>"; };
+		2440B62B1D927711007E4B5B /* Led Zeppelin- Stairway to Heaven with Lyrics.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Led Zeppelin- Stairway to Heaven with Lyrics.mp3"; sourceTree = "<group>"; };
+		24B443C91D9278CE00CFDE98 /* GameModeSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModeSelection.swift; sourceTree = "<group>"; };
+		24C1FFD11D92746B00C99854 /* GameModeSelection.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameModeSelection.sks; sourceTree = "<group>"; };
+		3F0E45BD1C623142002725BA /* Opponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Opponent.swift; sourceTree = "<group>"; };
+		3F0E45BF1C62343C002725BA /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		3F0E45C11C6237B9002725BA /* PlayerAnimation.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlayerAnimation.sks; sourceTree = "<group>"; };
+		3F3D5FA11C6285BF0015BE38 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		3F3D5FA31C6286D40015BE38 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		3FC1F53D1C60F6080071C643 /* Reaveen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reaveen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC1F5401C60F6080071C643 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FC1F5421C60F6080071C643 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		3FC1F5441C60F6080071C643 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		3FC1F5461C60F6080071C643 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		3FC1F5491C60F6080071C643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FC1F54B1C60F6080071C643 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FC1F54E1C60F6080071C643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FC1F5501C60F6080071C643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FC1F5551C60F6080071C643 /* ReaveenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReaveenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC1F5591C60F6080071C643 /* ReaveenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaveenTests.swift; sourceTree = "<group>"; };
+		3FC1F55B1C60F6080071C643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FC1F5601C60F6080071C643 /* ReaveenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReaveenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC1F5641C60F6080071C643 /* ReaveenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaveenUITests.swift; sourceTree = "<group>"; };
+		3FC1F5661C60F6080071C643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FC2599E1C61137800623625 /* DashSkill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashSkill.swift; sourceTree = "<group>"; };
+		3FC259A01C6113E300623625 /* ProjectileSkill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectileSkill.swift; sourceTree = "<group>"; };
+		3FFA99641C60FE0B00EBCD87 /* SKButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKButton.swift; sourceTree = "<group>"; };
+		3FFA99681C60FE3900EBCD87 /* SkillTypes .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SkillTypes .swift"; sourceTree = "<group>"; };
+		3FFA996C1C610F0000EBCD87 /* ComboStartSkill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComboStartSkill.swift; sourceTree = "<group>"; };
+		3FFA99701C6110D000EBCD87 /* CustomProgressBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomProgressBar.h; sourceTree = "<group>"; };
+		3FFA99711C6110E100EBCD87 /* Reaveen-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Reaveen-Bridging-Header.h"; sourceTree = "<group>"; };
+		3FFA99721C6110E200EBCD87 /* CustomProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomProgressBar.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FC1F53A1C60F6080071C643 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC1F5521C60F6080071C643 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC1F55D1C60F6080071C643 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DD207FB1C617C8A00FE90F3 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3F0E45BD1C623142002725BA /* Opponent.swift */,
+				3F3D5FA11C6285BF0015BE38 /* Character.swift */,
+				3F3D5FA31C6286D40015BE38 /* Player.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		3FC1F5341C60F6080071C643 = {
+			isa = PBXGroup;
+			children = (
+				3F0E45C11C6237B9002725BA /* PlayerAnimation.sks */,
+				3FC1F53F1C60F6080071C643 /* Reaveen */,
+				3FC1F5581C60F6080071C643 /* ReaveenTests */,
+				3FC1F5631C60F6080071C643 /* ReaveenUITests */,
+				3FC1F53E1C60F6080071C643 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FC1F53E1C60F6080071C643 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FC1F53D1C60F6080071C643 /* Reaveen.app */,
+				3FC1F5551C60F6080071C643 /* ReaveenTests.xctest */,
+				3FC1F5601C60F6080071C643 /* ReaveenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FC1F53F1C60F6080071C643 /* Reaveen */ = {
+			isa = PBXGroup;
+			children = (
+				1DD207FB1C617C8A00FE90F3 /* Entities */,
+				3FFA99661C60FE2500EBCD87 /* Skills */,
+				3FFA99631C60FDFB00EBCD87 /* UI */,
+				3FFA99621C60F75200EBCD87 /* Scene */,
+				3FC1F5401C60F6080071C643 /* AppDelegate.swift */,
+				3FC1F5461C60F6080071C643 /* GameViewController.swift */,
+				3FC1F5481C60F6080071C643 /* Main.storyboard */,
+				2440B62B1D927711007E4B5B /* Led Zeppelin- Stairway to Heaven with Lyrics.mp3 */,
+				3FC1F54B1C60F6080071C643 /* Assets.xcassets */,
+				3FFA99711C6110E100EBCD87 /* Reaveen-Bridging-Header.h */,
+				3FC1F54D1C60F6080071C643 /* LaunchScreen.storyboard */,
+				3FC1F5501C60F6080071C643 /* Info.plist */,
+			);
+			path = Reaveen;
+			sourceTree = "<group>";
+		};
+		3FC1F5581C60F6080071C643 /* ReaveenTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FC1F5591C60F6080071C643 /* ReaveenTests.swift */,
+				3FC1F55B1C60F6080071C643 /* Info.plist */,
+			);
+			path = ReaveenTests;
+			sourceTree = "<group>";
+		};
+		3FC1F5631C60F6080071C643 /* ReaveenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FC1F5641C60F6080071C643 /* ReaveenUITests.swift */,
+				3FC1F5661C60F6080071C643 /* Info.plist */,
+			);
+			path = ReaveenUITests;
+			sourceTree = "<group>";
+		};
+		3FFA99621C60F75200EBCD87 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				3FC1F5421C60F6080071C643 /* GameScene.sks */,
+				3FC1F5441C60F6080071C643 /* GameScene.swift */,
+				1DD207F71C617B9B00FE90F3 /* MainMenuScene.sks */,
+				1DD207F11C617AA000FE90F3 /* MainMenuScene.swift */,
+				1DD207F91C617BAA00FE90F3 /* SettingsMenuScene.sks */,
+				1DD207F51C617B2100FE90F3 /* SettingsMenuScene.swift */,
+				3F0E45BF1C62343C002725BA /* GameOverScene.swift */,
+				24C1FFD11D92746B00C99854 /* GameModeSelection.sks */,
+				24B443C91D9278CE00CFDE98 /* GameModeSelection.swift */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		3FFA99631C60FDFB00EBCD87 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1DDDEF461C61612500449865 /* ComboBar.swift */,
+				3FFA99641C60FE0B00EBCD87 /* SKButton.swift */,
+				3FFA99701C6110D000EBCD87 /* CustomProgressBar.h */,
+				3FFA99721C6110E200EBCD87 /* CustomProgressBar.m */,
+				1DD207F31C617AC400FE90F3 /* UIButton.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		3FFA99661C60FE2500EBCD87 /* Skills */ = {
+			isa = PBXGroup;
+			children = (
+				3FFA99671C60FE2A00EBCD87 /* Ninja */,
+				3FFA996C1C610F0000EBCD87 /* ComboStartSkill.swift */,
+			);
+			name = Skills;
+			sourceTree = "<group>";
+		};
+		3FFA99671C60FE2A00EBCD87 /* Ninja */ = {
+			isa = PBXGroup;
+			children = (
+				3FFA99681C60FE3900EBCD87 /* SkillTypes .swift */,
+				3FC2599E1C61137800623625 /* DashSkill.swift */,
+				3FC259A01C6113E300623625 /* ProjectileSkill.swift */,
+				1D0715411C61705B00C30898 /* Projectile.swift */,
+			);
+			name = Ninja;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FC1F53C1C60F6080071C643 /* Reaveen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC1F5691C60F6080071C643 /* Build configuration list for PBXNativeTarget "Reaveen" */;
+			buildPhases = (
+				3FC1F5391C60F6080071C643 /* Sources */,
+				3FC1F53A1C60F6080071C643 /* Frameworks */,
+				3FC1F53B1C60F6080071C643 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reaveen;
+			productName = Reaveen;
+			productReference = 3FC1F53D1C60F6080071C643 /* Reaveen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FC1F5541C60F6080071C643 /* ReaveenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC1F56C1C60F6080071C643 /* Build configuration list for PBXNativeTarget "ReaveenTests" */;
+			buildPhases = (
+				3FC1F5511C60F6080071C643 /* Sources */,
+				3FC1F5521C60F6080071C643 /* Frameworks */,
+				3FC1F5531C60F6080071C643 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FC1F5571C60F6080071C643 /* PBXTargetDependency */,
+			);
+			name = ReaveenTests;
+			productName = ReaveenTests;
+			productReference = 3FC1F5551C60F6080071C643 /* ReaveenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FC1F55F1C60F6080071C643 /* ReaveenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC1F56F1C60F6080071C643 /* Build configuration list for PBXNativeTarget "ReaveenUITests" */;
+			buildPhases = (
+				3FC1F55C1C60F6080071C643 /* Sources */,
+				3FC1F55D1C60F6080071C643 /* Frameworks */,
+				3FC1F55E1C60F6080071C643 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FC1F5621C60F6080071C643 /* PBXTargetDependency */,
+			);
+			name = ReaveenUITests;
+			productName = ReaveenUITests;
+			productReference = 3FC1F5601C60F6080071C643 /* ReaveenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FC1F5351C60F6080071C643 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Matic Teršek";
+				TargetAttributes = {
+					3FC1F53C1C60F6080071C643 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = V53DRLRM6T;
+						LastSwiftMigration = 0820;
+					};
+					3FC1F5541C60F6080071C643 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = V53DRLRM6T;
+						LastSwiftMigration = 0820;
+						TestTargetID = 3FC1F53C1C60F6080071C643;
+					};
+					3FC1F55F1C60F6080071C643 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = V53DRLRM6T;
+						LastSwiftMigration = 0820;
+						TestTargetID = 3FC1F53C1C60F6080071C643;
+					};
+				};
+			};
+			buildConfigurationList = 3FC1F5381C60F6080071C643 /* Build configuration list for PBXProject "reaveen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FC1F5341C60F6080071C643;
+			productRefGroup = 3FC1F53E1C60F6080071C643 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FC1F53C1C60F6080071C643 /* Reaveen */,
+				3FC1F5541C60F6080071C643 /* ReaveenTests */,
+				3FC1F55F1C60F6080071C643 /* ReaveenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FC1F53B1C60F6080071C643 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F0E45C21C6237B9002725BA /* PlayerAnimation.sks in Resources */,
+				24C1FFD21D92746B00C99854 /* GameModeSelection.sks in Resources */,
+				3FC1F5431C60F6080071C643 /* GameScene.sks in Resources */,
+				3FC1F54F1C60F6080071C643 /* LaunchScreen.storyboard in Resources */,
+				3FC1F54C1C60F6080071C643 /* Assets.xcassets in Resources */,
+				3FC1F54A1C60F6080071C643 /* Main.storyboard in Resources */,
+				1DD207FA1C617BAA00FE90F3 /* SettingsMenuScene.sks in Resources */,
+				1DD207F81C617B9B00FE90F3 /* MainMenuScene.sks in Resources */,
+				2440B62C1D927711007E4B5B /* Led Zeppelin- Stairway to Heaven with Lyrics.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC1F5531C60F6080071C643 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC1F55E1C60F6080071C643 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FC1F5391C60F6080071C643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC1F5451C60F6080071C643 /* GameScene.swift in Sources */,
+				1DD207F41C617AC400FE90F3 /* UIButton.swift in Sources */,
+				3F0E45C01C62343C002725BA /* GameOverScene.swift in Sources */,
+				24B443CA1D9278CE00CFDE98 /* GameModeSelection.swift in Sources */,
+				3F0E45BE1C623142002725BA /* Opponent.swift in Sources */,
+				1D0715421C61705B00C30898 /* Projectile.swift in Sources */,
+				3FC2599F1C61137800623625 /* DashSkill.swift in Sources */,
+				3FFA99691C60FE3900EBCD87 /* SkillTypes .swift in Sources */,
+				3FC1F5471C60F6080071C643 /* GameViewController.swift in Sources */,
+				3FFA996D1C610F0000EBCD87 /* ComboStartSkill.swift in Sources */,
+				1DD207F21C617AA000FE90F3 /* MainMenuScene.swift in Sources */,
+				3FC259A11C6113E300623625 /* ProjectileSkill.swift in Sources */,
+				3FFA99731C6110E200EBCD87 /* CustomProgressBar.m in Sources */,
+				3FC1F5411C60F6080071C643 /* AppDelegate.swift in Sources */,
+				1DDDEF471C61612500449865 /* ComboBar.swift in Sources */,
+				1DD207F61C617B2100FE90F3 /* SettingsMenuScene.swift in Sources */,
+				3F3D5FA21C6285BF0015BE38 /* Character.swift in Sources */,
+				3F3D5FA41C6286D40015BE38 /* Player.swift in Sources */,
+				3FFA99651C60FE0B00EBCD87 /* SKButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC1F5511C60F6080071C643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC1F55A1C60F6080071C643 /* ReaveenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC1F55C1C60F6080071C643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC1F5651C60F6080071C643 /* ReaveenUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FC1F5571C60F6080071C643 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FC1F53C1C60F6080071C643 /* Reaveen */;
+			targetProxy = 3FC1F5561C60F6080071C643 /* PBXContainerItemProxy */;
+		};
+		3FC1F5621C60F6080071C643 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FC1F53C1C60F6080071C643 /* Reaveen */;
+			targetProxy = 3FC1F5611C60F6080071C643 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FC1F5481C60F6080071C643 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FC1F5491C60F6080071C643 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FC1F54D1C60F6080071C643 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FC1F54E1C60F6080071C643 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FC1F5671C60F6080071C643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FC1F5681C60F6080071C643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FC1F56A1C60F6080071C643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = V53DRLRM6T;
+				INFOPLIST_FILE = Reaveen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = student.Reaveen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Reaveen/Reaveen-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3FC1F56B1C60F6080071C643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = V53DRLRM6T;
+				INFOPLIST_FILE = Reaveen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = student.Reaveen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Reaveen/Reaveen-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3FC1F56D1C60F6080071C643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = V53DRLRM6T;
+				INFOPLIST_FILE = ReaveenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = student.ReaveenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reaveen.app/Reaveen";
+			};
+			name = Debug;
+		};
+		3FC1F56E1C60F6080071C643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V53DRLRM6T;
+				INFOPLIST_FILE = ReaveenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = student.ReaveenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reaveen.app/Reaveen";
+			};
+			name = Release;
+		};
+		3FC1F5701C60F6080071C643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = V53DRLRM6T;
+				INFOPLIST_FILE = ReaveenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = student.ReaveenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Reaveen;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3FC1F5711C60F6080071C643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = V53DRLRM6T;
+				INFOPLIST_FILE = ReaveenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = student.ReaveenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Reaveen;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FC1F5381C60F6080071C643 /* Build configuration list for PBXProject "reaveen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC1F5671C60F6080071C643 /* Debug */,
+				3FC1F5681C60F6080071C643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FC1F5691C60F6080071C643 /* Build configuration list for PBXNativeTarget "Reaveen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC1F56A1C60F6080071C643 /* Debug */,
+				3FC1F56B1C60F6080071C643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FC1F56C1C60F6080071C643 /* Build configuration list for PBXNativeTarget "ReaveenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC1F56D1C60F6080071C643 /* Debug */,
+				3FC1F56E1C60F6080071C643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FC1F56F1C60F6080071C643 /* Build configuration list for PBXNativeTarget "ReaveenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC1F5701C60F6080071C643 /* Debug */,
+				3FC1F5711C60F6080071C643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FC1F5351C60F6080071C643 /* Project object */;
+}
